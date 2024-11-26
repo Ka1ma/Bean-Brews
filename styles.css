@@ -3,8 +3,9 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: #2e4a24; /* Match the green in your image */
+    color: #2e4a24;
+    background-color: #f8f8f8;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -13,7 +14,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #1f3617;
+    background-color: #2e4a24;
+    color: #fff;
 }
 
 .header .logo {
@@ -22,76 +24,101 @@ body {
 }
 
 .header .logo img {
-    width: 40px;
-    margin-right: 1rem;
+    width: 50px;
+    margin-right: 0.5rem;
 }
 
 .header ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
-.header a {
+.header ul li a {
     text-decoration: none;
-    color: #bfa573; /* Gold tone for text */
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header ul li a:hover {
+    color: #bfa573;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 4rem;
-    background-color: #2e4a24;
+    padding: 4rem 2rem;
+    background-color: #bfa573;
+    color: #2e4a24;
+    border-bottom: 5px solid #fff;
 }
 
 .hero h2 {
-    font-size: 3rem;
-    color: #bfa573;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .cta-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #2e4a24;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+    background-color: #1f3617;
 }
 
 /* Welcome Section */
 .welcome {
     text-align: center;
     padding: 3rem 2rem;
-    background-color: #bfa573;
+    background-color: #fff;
     color: #2e4a24;
 }
 
 .welcome h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-.welcome p {
-    font-size: 1.2rem;
 }
 
 /* Menu Section */
 .menu {
     padding: 3rem 2rem;
-    background-color: #bfa573;
-    color: #2e4a24;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
 .menu h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: #2e4a24;
 }
 
 .menu-items {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 .item {
-    background-color: #2e4a24;
+    background-color: #fff;
     padding: 1rem;
     border-radius: 10px;
-    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 200px;
 }
@@ -103,9 +130,61 @@ body {
 
 .item h3 {
     margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: #2e4a24;
 }
 
 .item p {
     font-size: 1rem;
-    color: #bfa573;
+    color: #666;
+}
+
+.item button {
+    padding: 0.5rem 1rem;
+    background-color: #2e4a24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #1f3617;
+}
+
+/* Form Section */
+.order {
+    padding: 3rem 2rem;
+    background-color: #bfa573;
+    color: #fff;
+    text-align: center;
+    border-top: 5px solid #fff;
+}
+
+.order .form-group {
+    margin-bottom: 1rem;
+}
+
+.order label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.order input,
+.order select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e4a24;
+    color: #fff;
 }
