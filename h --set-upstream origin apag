@@ -1,0 +1,41 @@
+[33mcommit 3f5198721a7e138dc55f5cb9e3520080db33c55c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mapag[m[33m)[m
+Author: farrahApag <201131134@my.xu.edu.ph>
+Date:   Sun Dec 1 11:55:53 2024 +0800
+
+    Server on
+
+[33mcommit 001b40f46d0aeb9cf2c2ff1f3e8cbf626e5c501e[m[33m ([m[1;31morigin/apag[m[33m)[m
+Author: farrahApag <201131134@my.xu.edu.ph>
+Date:   Thu Nov 28 14:21:16 2024 +0800
+
+    server uploaded
+
+[33mcommit ea510fff02ce86d4858a068d5dcd953d2ac5ae92[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Mychal Redoblado <20220025533@my.xu.edu.ph>
+Date:   Tue Nov 26 15:20:11 2024 +0800
+
+    new update of website
+
+[33mcommit 042b249cc74f5ae95e23f452b869a2e00cfb10ec[m
+Author: Mychal Redoblado <makai@Kaimacbook-Air.local>
+Date:   Sun Nov 24 23:27:23 2024 +0800
+
+    Add .gitignore to ignore macOS metadata files
+
+[33mcommit 2c7c34e2fa1c3a0899a159f98a98d7d576de3afe[m
+Author: Mychal Redoblado <makai@Kaimacbook-Air.local>
+Date:   Sun Nov 24 23:24:54 2024 +0800
+
+    Added untracked file ._README.md
+
+[33mcommit c01db7d6e4316d10085e18e19d4476dc46103d55[m
+Author: Mychal Redoblado <makai@Kaimacbook-Air.local>
+Date:   Sun Nov 24 23:18:35 2024 +0800
+
+    Revamp by Makai
+
+[33mcommit 3bc9f670184d9bdf986d2f832e9c69802008b8d1[m
+Author: Makai <89065349+Ka1ma@users.noreply.github.com>
+Date:   Sun Nov 24 23:16:46 2024 +0800
+
+    Initial commit
