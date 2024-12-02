@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="loyaltyProgram.css">
+    <title>loyalty Program</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            </div>
+            <nav>
+                <div class="sidenav">
+                    <div class="sidenav-header">
+                    <img src="logo.png" alt="Bean&Brew Logo" id="logo">
+                    <h1 id="SideNavHeaderText">BEAN&BREW</h1>
+                    </div>
+    
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="customer.html">Customer</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="financialRecord.html">Financial Record</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="loyaltyProgram.html">Loyalty Program</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="salesTransaction.html">Sales Transaction</a></li>
+                    <li><a href="supplier.html">Supplier</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    <div class="loyatlyProgram-form-container">
+        <h1>Loyatly Program</h1>
+        <form action="/addLoyaltyProgram" method="POST" id="loyatlyProgram">
+            <!-- Product ID -->
+            <div class="form-group">
+                <label for="productId">Product ID</label>
+                <input type="text" id="productId" name="productId" placeholder="Enter Product ID" required>
+            </div>
+
+            <!-- Current Stock -->
+            <div class="form-group">
+                <label for="currentStock">Current Stock</label>
+                <input type="number" id="currentStock" name="currentStock" placeholder="Enter Current Stock" min="0" required>
+            </div>
+
+            <!-- Reorder Level -->
+            <div class="form-group">
+                <label for="reorderLevel">Reorder Level</label>
+                <input type="number" id="reorderLevel" name="reorderLevel" placeholder="Enter Reorder Level" min="0" required>
+            </div>
+
+            <!-- Last Restock Date -->
+            <div class="form-group">
+                <label for="lastRestockDate">Last Restock Date</label>
+                <input type="date" id="lastRestockDate" name="lastRestockDate" required>
+            </div>
+
+            <!-- Supplier ID -->
+            <div class="form-group">
+                <label for="supplierId">Supplier ID</label>
+                <input type="text" id="supplierId" name="supplierId" placeholder="Enter Supplier ID" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Save Inventory</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

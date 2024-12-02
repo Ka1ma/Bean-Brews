@@ -63,9 +63,58 @@ app.post("/addCustomer", (req, res) => {
     });
 });
 
+// Mongoose Schema for Inventory (adjusted to match the form fields)
+const InventorySchema = new mongoose.Schema({
+  productId: String,
+  currentStock: Number,
+  reorderLevel: Number,
+  lastRestockDate: Date,
+  supplierId: String,
+});
+
+const Inventory = mongoose.model('Inventory', InventorySchema);
+
+// POST route to handle inventory submission
+app.post("/addInventory", (req, res) => {
+  console.log("Form data received:", req.body);
+  
+  const { productId, currentStock, reorderLevel, lastRestockDate, supplierId } = req.body;
+
+  // Create a new inventory instance using the submitted data
+  const newInventory = new Inventory({
+    productId,
+    currentStock,
+    reorderLevel,
+    lastRestockDate,
+    supplierId,
+  });
+
+  // Save the new inventory to the database
+  newInventory.save()
+    .then(() => {
+      console.log("Order placed successfully!");
+      // Send a JSON response indicating success
+      res.status(200).json({ success: true, message: 'Order placed successfully' });
+    })
+    .catch((error) => {
+      console.error("Error placing order:", error);
+      res.status(500).json({ success: false, message: "There was an error placing your inventory." });
+    });
+});
+
 // Route for the homepage
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Route for the inventory
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'inventory.html'));
+});
+
+// Route for the Loyalty Program
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'loyaltyProgram.html'));
 });
 
 // Start the server

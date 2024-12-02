@@ -89,3 +89,34 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Handle inventory form submission
+document.getElementById('inventoryForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const InventoryData = {
+        productId: document.getElementById('productId').value,
+        currentStock: document.getElementById('currentStock').value,
+        reorderLevel: document.getElementById('reorderLevel').value,
+        lastRestockDate: document.getElementById('lastRestockDate').value,
+        supplierId: document.getElementById('supplierId').value,
+    };
+
+    try {
+        const response = await fetch('http://localhost:3019/addInventory', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(InventoryData),
+        });
+
+        if (response.ok) {
+            alert('Order placed successfully!');
+        } else {
+            alert('There was an error placing your order.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
