@@ -1,23 +1,18 @@
-# BeanBrew Web App
+BeanBrew Web App
 
-**BeanBrew** is a Python-based Flask web application for managing customers, orders, inventory, and analytics for a coffee shop. It uses **MongoDB Atlas** as the database backend.
+BeanBrew is a Python-based Flask web application for managing customers, orders, inventory, and analytics for a coffee shop. It uses MongoDB Atlas as the database backend.
 
----
+Features
+	•	Manage customer profiles (Add, View).
+	•	Record orders and track inventory.
+	•	Generate sales and inventory analytics.
+	•	Lightweight and easy-to-deploy Python/Flask setup.
 
-## Features
-
-- Manage customer profiles (Add, View).
-- Record orders and track inventory.
-- Generate sales and inventory analytics.
-- Lightweight and easy-to-deploy Python/Flask setup.
-
----
-
-## Project Structure
+Project Structure
 
 BeanBrew_WebApp/
 ├── app/
-│   ├── init.py          # Flask app initialization
+│   ├── __init__.py          # Flask app initialization
 │   ├── models.py            # MongoDB database models
 │   ├── routes/              # Application routes
 │   │   ├── customer.py      # Customer routes
@@ -37,22 +32,17 @@ BeanBrew_WebApp/
 ├── run.py                   # Main entry point
 ├── requirements.txt         # Dependencies
 
----
+Prerequisites
+	1.	Python: Install Python 3.x from https://python.org.
+	2.	MongoDB Atlas: Set up a free MongoDB Atlas cluster:
+	•	Sign up for MongoDB Atlas.
+	•	Create a cluster and database named beanbrew.
+	•	Add collections: customers, orders, inventory, reports.
 
-## Prerequisites
+Setup Instructions
 
-1. **Python**: Install Python 3.x from [https://python.org](https://python.org).
-2. **MongoDB Atlas**: Set up a free MongoDB Atlas cluster:
-   - [Sign up for MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-   - Create a cluster and database named **beanbrew**.
-   - Add collections: `customers`, `orders`, `inventory`, `reports`.
+Clone the Repository
 
----
-
-## Setup Instructions
-
-### Clone the Repository
-```bash
 git clone https://github.com/Ka1ma/Bean-Brews.git
 cd BeanBrew_WebApp
 
@@ -89,15 +79,15 @@ http://127.0.0.1:5000
 Database Structure
 
 Collections
-	1.	Customers
+
+1. Customers
 
 {
     "name": "John Doe",
     "email": "john.doe@example.com"
 }
 
-
-	2.	Orders
+2. Orders
 
 {
     "customer_id": "123",
@@ -105,8 +95,7 @@ Collections
     "total_price": 150
 }
 
-
-	3.	Inventory
+3. Inventory
 
 {
     "product_id": "P001",
@@ -115,8 +104,7 @@ Collections
     "price": 100
 }
 
-
-	4.	Reports
+4. Reports
 
 {
     "type": "sales",
@@ -152,7 +140,7 @@ Future Improvements
 	•	Optimize database queries for scalability.
 
 Contributors
-	•	Farrah Apag: Full Stack Developer Backend Especialist 
+	•	Farrah Apag: Full Stack Developer & Backend Specialist
 	•	Mychal Redoblado: Full Stack Developer
-    •	Aliyah Almonia:
-    •	Hannah Lawi: 
+	•	Aliyah Almonia: Contributor
+	•	Hannah Lawi: Contributor

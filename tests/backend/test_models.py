@@ -21,3 +21,4 @@ def test_inventory_collection():
     result = inventory.insert_one(sample_item)
     assert result.inserted_id is not None
     inventory.delete_one({"_id": result.inserted_id})  # Cleanup
+    

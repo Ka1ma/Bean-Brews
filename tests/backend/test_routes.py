@@ -25,3 +25,4 @@ def test_inventory_endpoint(client):
     response = client.get('/inventory/')
     assert response.status_code == 200
     assert isinstance(response.json, list)
+    
