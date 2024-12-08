@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Customers</h2>
+<ul>
+    {% for customer in customers %}
+    <li>{{ customer.name }} - {{ customer.email }}</li>
+    {% endfor %}
+</ul>
+<form method="POST" action="{{ url_for('customer.add_customer') }}">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Add Customer</button>
+</form>
+{% endblock %}
